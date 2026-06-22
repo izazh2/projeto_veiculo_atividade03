@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Projetos do veiculo</title>
+
+    <link rel="stylesheet" href="css/style_veiculo.css">
+
+    <script src="js/script_veiculo.js" type="module" defer></script>
+
 </head>
 <body>
+
+    <h1>CÁLCULO Seguro e IPVA Automotivo</h1>
+
+    <form id="form-veiculo">
+
+        <input type="text" id="modelo" placeholder="Modelo" required><br>
+        <input type="text" id="marca" placeholder="Marca" required><br>
+        <input type="text" id="placa" placeholder="Placa" required><br>
+        <input type="number" id="ano" placeholder="Ano de fabricação" required><br>
+        <input type="number" id="valor" placeholder="Valor de mercado (R$)" required><br>
+        
+        <fieldset>
+            <legend>Tipo de Combustivel</legend>
+
+            <label>
+                <input type="radio" name="combustivel" value="gasolina">Gasolina
+            </label>
+
+            <label>
+                <input type="radio" name="combustivel" value="etanol">Etanol
+            </label>
+
+            <label>
+                <input type="radio" name="combustivel" value="bicombustivel">Bicombustivel
+            </label>
+
+            <label>
+                <input type="radio" name="combustivel" value="hibrido">Híbidro
+            </label>
+
+            <label>
+                <input type="radio" name="combustivel" value="eletrico">Elétrico
+            </label>
+        </fieldset>
+
+        <button type="submit"> Adicionar </button>
+    </form>
+    
+    <ul id="lista-veiculos"></ul>
     
 </body>
 </html>
