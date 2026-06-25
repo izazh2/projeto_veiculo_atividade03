@@ -1,0 +1,86 @@
+#geral{
+    width: 500px;
+    min-height: 600px;
+    margin: 20px auto;
+    border: solid 1px; 
+    padding: 2px;
+    border-radius: 8px;
+    background-color: purple;
+}
+
+
+#div-form{
+    margin: 50px 0px;
+    padding: 5px;
+}
+
+.div-lista-carros{
+    font-size: 1.5em;
+    margin: 20px;
+    padding: 50px;
+    text-transform: uppercase;
+}
+
+form{
+    padding: 25px;
+    border-radius: 8px;
+    background-color: plum;
+}
+
+.gasolina{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 260px;
+    margin-bottom: 10px;
+}
+
+.etanol{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 260px;
+    margin-bottom: 12px;
+}
+
+.biocombustivel{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 255px;
+    margin-bottom: 12px;
+}
+
+.hibrido{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 260px;
+    margin-bottom: 12px;
+}
+
+.eletrico{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 260px;
+    margin-bottom: 12px;
+}
+
+label, input{
+    display: block;
+    margin: 10px 0px;
+    width: 370px;
+    height: 30px;
+    font-size: 1.2em;
+    padding: 0px 15px;
+    border-radius: 8px;
+}
+
+button{
+    margin: 20px 0px;
+    width: 200px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 8px;
+}
