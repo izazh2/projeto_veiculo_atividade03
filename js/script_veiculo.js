@@ -1,22 +1,15 @@
-//importando calculos
 import { calculoFinal, calculoIdade, calculoIpva, calculoSeg } from './script_calculo.js'
 
-//array para veiculos
 const veiculos = []
 
-//pegando elementos do DOM
 const formVeiculo = document.querySelector('#form-veiculo')
 const divLista = document.querySelector('#div-lista')
 
-//capturando o evento submit do form
 formVeiculo.addEventListener('submit', (evt)=>{
-    //interrompendo o evento padrão do form
-    evt.preventDefault()
+evt.preventDefault()
 
-    //criando o objeto dataform
     const dadosForm = new FormData(formVeiculo)
 
-    //criando e preenchendo o objeto literal
     const veiculo = {
         modelo: dadosForm.get('modelo'),
         marca: dadosForm.get('marca'),
@@ -27,25 +20,19 @@ formVeiculo.addEventListener('submit', (evt)=>{
     }
 
 
-    //chamando a funçaõ addVeiculo e passando o objeto literal veiculo
     addVeiculo(veiculo)
 
-    //limpando o form
     formVeiculo.reset()
 
 })
 
-//função para adicionar veiculos
 const addVeiculo = (objVeiculo)=>{
-    //adicionando o objeto no array pessoas vindo da funcao
     veiculos.push(objVeiculo)
 
     listVeiculo()
 }
 
-//funcao listar veiculos
 const listVeiculo = () => {
-    //limpando a div-lista
     divLista.innerHTML = ''
 
     veiculos.forEach((elem, i)=>{
